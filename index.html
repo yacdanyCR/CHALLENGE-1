@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navBar/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo">snap</a>
 
-  Features
-  Company
-  Careers
-  About
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- Menu -->
+    <nav class="nav">
+      <ul class="menu">
+        <li class="subnav">
+          <p class="subnavbtn">Features <i class="fa fa-caret-down"></i></p>
+          <div class="subnav-content">
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+          </div>
+        </li>
+        <li class="subnav">
+          <p class="subnavbtn">Company <i class="fa fa-caret-down"></i></p>
+          <div class="subnav-content">
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+          </div>
+        </li>
+        <li><a href="#">Carrers</a></li>
+        <li><a href="#">About</a></li>
+        <div class="nav__Buttons">
+          <li><a href="#"><button class="nav__Login--Button" type="button">Login</button></a></li>
+          <li><a href="#"><button class="nav__Register--Button" type="button">Register</button></a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
 </body>
+
 </html>
