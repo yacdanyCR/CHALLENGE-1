@@ -72,4 +72,9 @@
   .banner__Information--Section > h1 {
     font-size: 40px;
   }
+  .information__Client {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
 }
