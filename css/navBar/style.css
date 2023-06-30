@@ -4,6 +4,22 @@
   width: 100%;
 }
 
+.nav__Login--Button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: var(--grey);
+}
+
+.nav__Register--Button {
+  width: 150px;
+  border-radius: 1rem;
+  background-color: transparent;
+  height: 25px;
+  font-size: 18px;
+  color: var(--grey);
+}
+
 /* Logo */
 .logo {
   display: inline-block;
