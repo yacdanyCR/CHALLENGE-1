@@ -1,36 +1,75 @@
-.banner__Information--Section{
+@media (min-width: 768px) {
+  .banner__Section {
+    padding: 3rem;
+  }
+  .Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .banner__Text--Section {
+    margin-top: 2.5rem;
+    color: var(--grey);
+    font-size: 18px;
+  }
+  .banner__Information--Section {
+    width: 550px;
+  }
+  .banner__Information--Section > button {
+    margin-top: 2.5rem;
+  }
+  .banner__Information--Section > h1 {
+    font-size: 100px;
+  }
+  .information__Client {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem;
+  }
+
+  .banner__Client--Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+}
+
+.banner__Button--Section {
+  width: 150px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .banner__Information--Section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
     padding-top: 1.5rem;
-}
+  }
 
-.banner__Information--Section > h1{
-    font-size: 40px;
-}
-
-.banner__Text--Section{
+  .banner__Text--Section {
     padding: 1rem;
-}
+  }
 
-.banner__Button--Section{
-    width: 150px;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--black);
-    color: var(--white);
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.banner__Client--Section{
+  .banner__Client--Section {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1rem;
-}
+  }
 
-.banner__Client--Section > img{
+  .banner__Client--Section > img {
     width: 70px;
     height: 25px;
+  }
+  .banner__Information--Section > h1 {
+    font-size: 40px;
+  }
 }
